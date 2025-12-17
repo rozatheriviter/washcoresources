@@ -441,3 +441,63 @@ footer {
     top: 0;
     outline: 2px solid var(--accent-secondary);
 }
+
+/* Form Styles */
+.form-section {
+    padding-bottom: 80px;
+}
+
+.resource-form {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(230, 226, 214, 0.5);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    font-family: var(--font-header);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-primary);
+    background-color: #FAFAFA;
+    transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(217, 119, 87, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+@media (max-width: 768px) {
+    .resource-form {
+        padding: 24px;
+    }
+}

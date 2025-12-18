@@ -6,7 +6,9 @@ const ASSETS_TO_CACHE = [
   './submit-resource.html',
   './style.css',
   './app.js',
-  './resources.js'
+  './resources.js',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 // Install Event - Cache Files

@@ -1,6 +1,9 @@
 {
   "name": "Rooted: WashCo",
   "short_name": "Rooted",
+  "description": "Essential Resource Guide for Washington County. Find clothing, food, shelter, and support services near you.",
+  "lang": "en-US",
+  "orientation": "portrait-primary",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#FDFCF8",
@@ -15,6 +18,30 @@
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Submit Resource",
+      "url": "submit-resource.html",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "About",
+      "url": "about.html",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }

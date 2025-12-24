@@ -706,3 +706,8 @@ const resources = [
     address: "5150 SW Watson Ave. Beaverton, OR 97005",
     phone: "",
     hours: "Sun. 4 p.m.; last Thurs. of month 4 p.m.",
+    services: "Free hot meal",
+    notes: "Located at Bethel Congregational Church. All are welcome.",
+    transportation: "Bus: 57, 76, 78, MAX Blue"
+  }
+];

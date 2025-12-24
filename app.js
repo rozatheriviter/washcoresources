@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function init() {
         if (typeof resources !== 'undefined') {
             // Filter for Washington County resources
-            washCoResources = resources.filter(r => r.county === 'Washington');
+            washCoResources = resources;
 
             renderCategories();
             renderResources();

@@ -1100,4 +1100,125 @@ const resources = [
     notes: "Serving Hillsboro youth (up to age 18) and their families. Call to schedule appointment. HSO insurance accepted. Website: www.youthcontact.org.",
     transportation: "Bus: 47, 48, 57, MAX"
   }
+  // Additional Washington County Resources from Street Roots Guide
+  {
+    category: "Clothing",
+    name: "Birthright of Hillsboro",
+    address: "232 NE Lincoln St., Ste. F, Hillsboro, OR 97124",
+    phone: "503-648-6766",
+    hours: "Tues., Wed., Fri. noon-2 p.m.; Thurs. 5:30 p.m.-7:30 p.m.",
+    services: "Maternity and baby clothes up to 12 months. Free confidential pregnancy testing, doctor referrals and housing resources.",
+    notes: "Proof of pregnancy documentation needed to sign up for OHP and WIC. Bus: 46, 48, 57, MAX Blue.",
+    transportation: "Bus: 46, 48, 57, MAX Blue"
+  },
+  {
+    category: "Counseling/Mediation",
+    name: "Washington County Counseling and Victims' Services Program",
+    address: "160 SW Washington St., Hillsboro, OR 97123",
+    phone: "503-846-3020",
+    hours: "Mon.-Fri. 8:30 a.m.-4:30 p.m. or by appt.",
+    services: "Free individual, couples, career and family therapies; open to community.",
+    notes: "Bus: 46, 48, 57, MAX Blue.",
+    transportation: "Bus: 46, 48, 57, MAX Blue"
+  },
+  {
+    category: "Counseling/Mediation",
+    name: "Washington County Mental Health & Addiction Services",
+    address: "5240 NE Elam Young Parkway, Ste. 150, Hillsboro, OR 97124",
+    phone: "503-291-1155 (Crisis: 503-291-9111)",
+    hours: "Mon.-Fri. 8 a.m.-5 p.m.",
+    services: "Urgent care services for mental health and addiction concerns via Hawthorn Walk-In Center.",
+    notes: "Referrals for treatment, education materials, and information on treatment options. MAX Blue to Hawthorn Farm Station.",
+    transportation: "MAX Blue"
+  },
+  {
+    category: "Employment/Social Security",
+    name: "A.S.S.I.S.T. Program",
+    address: "4412 S Barbur Blvd., Ste. 200, Portland, OR 97239",
+    phone: "503-888-2690",
+    hours: "Mon.-Fri. 9 a.m.-5 p.m.",
+    services: "Resource for people with disabilities who need help starting a Social Security disability application.",
+    notes: "Mission to get disability applications approved quickly and avoid multi-year appeal processes. Bus: 1, 12, 38, 43, 44, 45, 54, 55, 56.",
+    transportation: "Bus: 1, 12, 38, 43, 44, 45, 54, 55, 56"
+  },
+  {
+    category: "Employment/Social Security",
+    name: "WorkSource Hillsboro/Beaverton",
+    address: "241 SW Edgeway Dr., Beaverton, OR 97006",
+    phone: "503-526-2700 ext. 2",
+    hours: "Mon.-Fri. 8 a.m.-5 p.m.",
+    services: "Oregon labor market information system, job search database and skills development.",
+    notes: "Bus: 48, 57, MAX Blue.",
+    transportation: "Bus: 48, 57, MAX Blue"
+  },
+  {
+    category: "Food and Grocery Assistance",
+    name: "Forest Grove Foursquare Church and Food Pantry",
+    address: "1719 Cedar St., Forest Grove, OR 97116",
+    phone: "503-357-4400",
+    hours: "Thurs. 10 a.m.-12:30 p.m.",
+    services: "Food pantry for low-income residents of Dilley, Cornelius, Forest Grove, Gales Creek, Gaston and Laurelwood.",
+    notes: "Bus: 57.",
+    transportation: "Bus: 57"
+  },
+  {
+    category: "Food and Grocery Assistance",
+    name: "St. Vincent de Paul Food Pantry - Forest Grove",
+    address: "St. Anthony Church, 1660 Elm St., Forest Grove, OR 97116",
+    phone: "503-357-9647",
+    hours: "Call Mon.-Sat. 9 a.m.-noon for appt.",
+    services: "Food pantry by appointment.",
+    notes: "",
+    transportation: ""
+  },
+  {
+    category: "Food and Grocery Assistance",
+    name: "St. Vincent de Paul Food Pantry - Hillsboro",
+    address: "St. Matthew's, 442 SE Third Ave., Hillsboro, OR 97123",
+    phone: "503-693-7528",
+    hours: "Mon. and Wed. 9 a.m.-11:30 a.m.",
+    services: "Food pantry; furniture, rent and utility assistance available.",
+    notes: "Mobile kitchen lunch served Wednesdays.",
+    transportation: ""
+  },
+  {
+    category: "Meals",
+    name: "The Salvation Army Tualatin Valley Corps",
+    address: "351 SE Oak St., Hillsboro, OR 97123",
+    phone: "503-640-4311",
+    hours: "Sack lunches daily 10 a.m.-11:30 a.m.; Food pantry Mon., Tues., Thurs., Fri. 1 p.m.-4 p.m.",
+    services: "Sack lunches and food pantry.",
+    notes: "Bus: 47, 48, 57, MAX Blue.",
+    transportation: "Bus: 47, 48, 57, MAX Blue"
+  },
+  {
+    category: "Utility Assistance",
+    name: "The Salvation Army Tualatin Valley Corps (Utilities)",
+    address: "1440 SE 21st Ave., Hillsboro, OR 97123",
+    phone: "503-640-4311",
+    hours: "Utility assistance 9 a.m.-11:30 a.m.",
+    services: "Water bill assistance (Hillsboro only) and PGE assistance (subject to availability).",
+    notes: "Photo ID, proof of address, income, and shut-off notice required for water. Bus: 47, 48, 57, MAX Blue.",
+    transportation: "Bus: 47, 48, 57, MAX Blue"
+  },
+  {
+    category: "Mental Health and Recovery Services",
+    name: "Inner Journey Healing Arts",
+    address: "134 SE Fifth Ave., Ste. C, Hillsboro, OR 97123",
+    phone: "971-777-0756",
+    hours: "Mon.-Sat. by appt.",
+    services: "Drug and Alcohol Outpatient, Women's Trauma Recovery and Men's Group Programs.",
+    notes: "DUII state certified. OHP and some insurances accepted. MAX Blue.",
+    transportation: "MAX Blue"
+  },
+  {
+    category: "Youth Services",
+    name: "Washington County Transition Age Youth Intensive Services",
+    address: "155 N First Ave., Ste. 250, Hillsboro, OR 97124",
+    phone: "503-449-2249",
+    hours: "Mon.-Fri. 8 a.m.-5 p.m.",
+    services: "Care coordination and wraparound mental health services for eligible older adolescents and young adults.",
+    notes: "Includes community-based treatment and psychiatric residential treatment planning.",
+    transportation: ""
+  }
 ];

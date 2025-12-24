@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentCategory = 'all';
     let searchTerm = '';
 
+    // Filtered resources list for Washington County
+    let washCoResources = [];
+
     // Initialize
     init();
     registerServiceWorker();
@@ -28,13 +31,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function init() {
-        renderCategories();
-        renderResources();
-        setupEventListeners();
+        if (typeof resources !== 'undefined') {
+            // Filter for Washington County resources
+            washCoResources = resources.filter(r => r.county === 'Washington');
+
+            renderCategories();
+            renderResources();
+            setupEventListeners();
+        } else {
+            console.error('Resources not loaded');
+        }
     }
 
     function getUniqueCategories() {
-        const categories = new Set(resources.map(r => r.category));
+        const categories = new Set(washCoResources.map(r => r.category));
         return Array.from(categories).sort();
     }
 
@@ -77,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function filterResources() {
-        return resources.filter(resource => {
+        return washCoResources.filter(resource => {
             // Category Match
             const categoryMatch = currentCategory === 'all' || resource.category === currentCategory;
 

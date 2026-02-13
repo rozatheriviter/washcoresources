@@ -38,7 +38,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getUniqueCategories() {
-        const categories = new Set(resources.map(r => r.category));
+        const categories = new Set();
+        resources.forEach(r => {
+            if (Array.isArray(r.category)) {
+                r.category.forEach(cat => categories.add(cat));
+            } else {
+                categories.add(r.category);
+            }
+        });
         return Array.from(categories).sort();
     }
 
@@ -83,7 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterResources() {
         return resources.filter(resource => {
             // Category Match
-            const categoryMatch = currentCategory === 'all' || resource.category === currentCategory;
+            let categoryMatch = false;
+            if (currentCategory === 'all') {
+                categoryMatch = true;
+            } else if (Array.isArray(resource.category)) {
+                categoryMatch = resource.category.includes(currentCategory);
+            } else {
+                categoryMatch = resource.category === currentCategory;
+            }
 
             // Search Match
             const searchString = `
@@ -91,7 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 ${resource.services}
                 ${resource.notes}
                 ${resource.address}
-                ${resource.category}
+                ${Array.isArray(resource.category) ? resource.category.join(' ') : resource.category}
+                ${resource.website || ''}
             `.toLowerCase();
 
             const searchMatch = searchString.includes(searchTerm);
@@ -126,14 +141,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Build address link
         let addressLink = '#';
-        let addressDisplay = resource.address;
-        if (resource.address && resource.address.toLowerCase() !== 'confidential' && resource.address.toLowerCase() !== 'multiple locations') {
+        if (resource.address && resource.address.toLowerCase() !== 'confidential' && resource.address.toLowerCase() !== 'multiple locations' && resource.address.toLowerCase() !== 'confidential locations') {
             addressLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(resource.address)}`;
         }
 
         // Build phone link
         let phoneLink = '#';
-        let phoneDisplay = resource.phone;
         if (resource.phone && resource.phone !== 'Various') {
              // Basic clean of phone number for link
              const cleanPhone = resource.phone.replace(/[^0-9]/g, '');
@@ -142,13 +155,16 @@ document.addEventListener('DOMContentLoaded', () => {
              }
         }
 
+        // Categories Display
+        const categoriesDisplay = Array.isArray(resource.category) ? resource.category.join(', ') : resource.category;
+
         // Services Text
         const services = resource.services ? `<div class="detail-text">${resource.services}</div>` : '';
         const notes = resource.notes ? `<div class="detail-text"><span class="detail-label">Notes:</span>${resource.notes}</div>` : '';
         const transport = resource.transportation ? `<div class="detail-text"><span class="detail-label">Transportation:</span>${resource.transportation}</div>` : '';
 
         div.innerHTML = `
-            <div class="card-category">${resource.category}</div>
+            <div class="card-category">${categoriesDisplay}</div>
             <h3 class="card-title">${resource.name}</h3>
 
             <div class="card-info">
@@ -182,8 +198,9 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <div class="action-row">
+                ${resource.website ? `<a href="${resource.website}" target="_blank" class="btn btn-primary" aria-label="Visit website for ${resource.name}">Website</a>` : ''}
                 ${addressLink !== '#' ? `<a href="${addressLink}" target="_blank" class="btn btn-secondary" aria-label="View map for ${resource.name}">Map</a>` : ''}
-                ${phoneLink !== '#' ? `<a href="${phoneLink}" class="btn btn-primary" aria-label="Call ${resource.name}">Call</a>` : ''}
+                ${phoneLink !== '#' ? `<a href="${phoneLink}" class="btn btn-secondary" aria-label="Call ${resource.name}">Call</a>` : ''}
             </div>
         `;
 

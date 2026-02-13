@@ -1,11 +1,13 @@
-const CACHE_NAME = 'rooted-washco-v2';
+const CACHE_NAME = 'rooted-washco-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
+  './map.html',
   './about.html',
   './submit-resource.html',
   './style.css',
   './app.js',
+  './map.js',
   './resources.js'
 ];
 

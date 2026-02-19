@@ -577,10 +577,29 @@ footer {
     margin-bottom: 8px;
 }
 
-.map-popup .popup-transport {
+.map-popup p {
+    margin: 4px 0;
     font-size: 0.9rem;
     color: var(--text-secondary);
-    margin: 0;
+}
+
+.map-popup .popup-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 12px;
+}
+
+.map-popup .popup-link {
+    color: var(--text-primary);
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent-secondary);
+    font-size: 0.9rem;
+}
+
+.map-popup .popup-link:hover {
+    color: var(--accent-color);
+    border-bottom-color: var(--accent-color);
 }
 
 /* Map Popup Overrides */

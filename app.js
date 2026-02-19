@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     let searchTerm = '';
 
     // Initialize
+    const urlParams = new URLSearchParams(window.location.search);
+    const searchParam = urlParams.get('search');
+    if (searchParam) {
+        searchTerm = searchParam.toLowerCase();
+        searchInput.value = searchParam;
+    }
+
     init();
     registerServiceWorker();
 

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rooted-washco-v5';
+const CACHE_NAME = 'rooted-washco-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -8,7 +8,9 @@ const ASSETS_TO_CACHE = [
   './style.css',
   './app.js',
   './map.js',
-  './resources.js'
+  './resources.js',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
 self.addEventListener('install', event => {

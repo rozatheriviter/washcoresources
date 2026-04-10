@@ -1,4 +1,4 @@
-const CACHE_NAME = 'rooted-washco-v6';
+const CACHE_NAME = 'rooted-washco-v7';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -9,6 +9,7 @@ const ASSETS_TO_CACHE = [
   './app.js',
   './map.js',
   './resources.js',
+  './transit_data.js',
   './icon-192.png',
   './icon-512.png'
 ];

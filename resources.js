@@ -1,4 +1,177 @@
 const resources = [
+ {
+  "category": ["Specialized Services", "Mental Health and Recovery Services"],
+  "name": "Westside Queer Resource Center (WQRC)",
+  "address": "233 SE Washington St. Hillsboro, OR 97123",
+  "phone": "",
+  "hours": "Drop-in: Mon. 2-4 p.m., Tues. 3-7 p.m., Wed. 3-7 p.m.",
+  "services": "Community resource center for 2SLGBTQIA+ individuals in Washington County. Affinity groups (trans adults, aro/ace, 55+, parents/caregivers), book club, social events, and resource navigation. Volunteer-run.",
+  "notes": "Email: info@westsideqrc.org. Not a clinical mental health provider.",
+  "transportation": "",
+  "website": "https://westsideqrc.org/",
+  "lat": 45.5229,
+  "lng": -122.9867
+},
+{
+  "category": ["Mental Health and Recovery Services"],
+  "name": "LifeWorks NW",
+  "address": "Beaverton: 10700 SW Beaverton-Hillsdale Hwy, Bldg 1 Ste. 110; Hillsboro: 971 SW Walnut St. and 1340 E. Main St.; Tigard: 8770 SW Scoffins St.",
+  "phone": "503-645-9010",
+  "hours": "Mon.-Fri. 8:30 a.m.-4:30 p.m.",
+  "services": "Outpatient mental health and substance use disorder treatment for all ages. Services include therapy, psychiatric evaluation, medication management, MAT, gambling addiction treatment, older adult services, and child/family mental health. Hillsboro-Walnut site is a Certified Community Behavioral Health Clinic (CCBHC) with integrated primary and behavioral health care.",
+  "notes": "OHP accepted. Sliding scale available. Also operates the Hawthorn Walk-In Center in Hillsboro. Spanish-language services available at Hillsboro locations.",
+  "transportation": "",
+  "website": "https://www.lifeworksnw.org/"
+},
+{
+  "category": ["Mental Health and Recovery Services", "Specialized Services"],
+  "name": "Lutheran Community Services NW (LCSNW)",
+  "address": "3800 SW Cedar Hills Blvd. Beaverton, OR 97005",
+  "phone": "503-924-2448",
+  "hours": "Mon.-Fri. 8:30 a.m.-4:30 p.m.",
+  "services": "Clinical mental health counseling, cross-cultural counseling for refugees and immigrants, housing navigation, family and community support.",
+  "notes": "OHP accepted. Listed as Washington County adult mental health provider by Washington County Behavioral Health.",
+  "transportation": "",
+  "website": "https://lcsnw.org/"
+}
+  {
+  "category": ["Crisis & Hotlines", "Community Resources"],
+  "name": "211info",
+  "address": "",
+  "phone": "211 (call or text zip code to 898211)",
+  "hours": "Mon.-Fri. 8 a.m.-6 p.m. Voicemail available after hours.",
+  "services": "Free statewide information and referral line connecting callers to 7,000+ health and social service programs. Covers housing, food, utilities, healthcare, childcare, SNAP navigation, behavioral health, employment, legal services, and more. Access to 240+ languages.",
+  "notes": "Text your zip code to 898211. Email: info@211info.org. Online: 211info.org. Serves all 36 Oregon counties.",
+  "transportation": "",
+  "website": "https://www.211info.org/"
+},
+{
+  "category": ["Housing and Rental Assistance", "Government Benefits"],
+  "name": "Community Action - Utility Assistance Program",
+  "address": "1001 SW Baseline St. Hillsboro, OR 97123",
+  "phone": "503-615-0771",
+  "hours": "Mon.-Fri. 8:30 a.m.-5 p.m. Energy assistance applications resume May 2025; water, garbage, and internet assistance accepted year-round.",
+  "services": "Assistance with electricity, natural gas, bulk fuel, water, garbage, and discounted internet bills for income-qualified Washington County residents. Does not require a disconnection notice to apply. Also offers weatherization and energy conservation services. Hillsboro residents may qualify for $10/month gigabit internet through HiLight Bridge program.",
+  "notes": "Income guideline: at or below 60% of Oregon State Median Income (past 30 days). Leave a voicemail if within 24 hours of disconnection. Applications processed in order received. caowash.org/utility-assistance",
+  "transportation": "Bus: 57",
+  "website": "https://caowash.org/utility-assistance"
+},
+{
+  "category": ["Mental Health and Recovery Services", "Family and Parenting Support"],
+  "name": "Options Counseling and Family Services",
+  "address": "8285 SW Nimbus Ave, Ste. 148 Beaverton, OR 97008",
+  "phone": "503-335-5975",
+  "hours": "Mon.-Fri. 8:30 a.m.-5 p.m.",
+  "services": "Individual, group, and family therapy for children, adolescents, and adults. Parenting classes, DBT, Parent-Child Interaction Therapy (PCIT), family preservation (intensive in-home safety services), and support for families involved with DHS Child Welfare.",
+  "notes": "OHP and Medicare accepted. Family-centered approach. Spanish-language services available. Also offers CBT-based group for LGBTQ+ youth and adults.",
+  "transportation": "",
+  "website": "https://options.org/"
+},
+{
+  "category": ["Transportation"],
+  "name": "Ride Connection",
+  "address": "",
+  "phone": "503-226-0700 (TTY: 7-1-1)",
+  "hours": "Service Center: Mon.-Fri. 7:30 a.m.-5 p.m. Door-to-door service: Mon.-Sat. 6 a.m.-7 p.m. (rural WA County hours changing to 8 a.m.-4:30 p.m. Jan. 2026)",
+  "services": "Free door-to-door rides for older adults (60+), people with disabilities, and rural residents for any purpose — medical, shopping, meals, recreation, or work. Free community shuttle routes throughout Washington County including Forest Grove, Tualatin, King City, and North Hillsboro. RideWise travel training for independent transit use. Rides for any purpose including medical, shopping, meals, and recreation.",
+  "notes": "No charge for rides; donations welcome. Registration required for door-to-door service — call to register. Interpreters available. Serves Clackamas, Multnomah, and Washington counties. rideconnection.org",
+  "transportation": "",
+  "website": "https://rideconnection.org/"
+},
+{
+  "category": ["Transportation", "Health Care"],
+  "name": "Ride to Care - OHP Non-Emergency Medical Transportation",
+  "address": "",
+  "phone": "503-416-3955 or 1-855-321-4899 (toll-free)",
+  "hours": "",
+  "services": "Free non-emergency medical transportation for Oregon Health Plan (OHP) members covered through Health Share. Options include shared rides, public transportation passes, and mileage reimbursement. For travel to and from covered healthcare appointments.",
+  "notes": "Must be a Health Share OHP member. Call to arrange transportation before your appointment. Not for emergency services.",
+  "transportation": "",
+  "website": "https://www.healthshareoregon.org/members/transportation"
+},
+{
+  "category": ["Transportation", "Disability and Aging Support"],
+  "name": "TriMet LIFT Paratransit",
+  "address": "",
+  "phone": "503-962-8000 option #2",
+  "hours": "Reservations: Mon.-Fri. 8 a.m.-5 p.m.",
+  "services": "Shared-ride paratransit service for people who cannot use regular TriMet buses or MAX due to a disability or disabling health condition. Operates within 3/4 mile of TriMet fixed routes. Reduced fare available for older adults and adults with disabilities.",
+  "notes": "Eligibility application required. Contact 503-962-8000 option #2 or print application at trimet.org. ADA-compliant. 30-minute pick-up window.",
+  "transportation": "",
+  "website": "https://trimet.org/lift"
+},
+{
+  "category": ["Legal Services", "Specialized Services"],
+  "name": "SOAR Immigration Legal Services - Hillsboro",
+  "address": "862 SE Oak St., Ste. 3A Hillsboro, OR 97123",
+  "phone": "503-384-2482 ext. 200",
+  "hours": "Tues., Wed., Thurs. 9 a.m.-noon and 1-4 p.m. (closed daily noon-1 p.m.)",
+  "services": "Low-cost immigration legal services for refugees and immigrants with limited income. Services include asylum, DACA renewals, deportation defense, green cards, citizenship/naturalization, family-based visas, TPS, U-Visa, and VAWA. Free services available for those qualifying under Afghan, Cuban-Haitian, Ukrainian, or New Americans Initiative grant programs. Free citizenship classes.",
+  "notes": "$50 consultation fee for general program (free if qualifying for grant-funded projects). DOJ-recognized provider. Multilingual staff. Email: soarlegalhillsboro@emoregon.org. Follows Portland Public Schools closure schedule.",
+  "transportation": "",
+  "website": "https://soarlegal.org/",
+  "lat": 45.5101,
+  "lng": -122.9774
+},
+{
+  "category": ["Specialized Services", "Housing and Rental Assistance"],
+  "name": "Unite Oregon - Washington County Chapter",
+  "address": "",
+  "phone": "",
+  "hours": "Community Commons events and programs vary; check website.",
+  "services": "Grassroots advocacy and community organizing for immigrants, refugees, BIPOC, and low-income residents in Washington County. Programs include renter's rights workshops (in partnership with Oregon Law Center and Community Action), leadership development (BOLD program with City of Beaverton), Community Commons events with food and resources, and housing advocacy. Multilingual, trauma-informed helpline via main org.",
+  "notes": "No physical storefront. Washington County Chapter Director contactable through uniteoregon.org. English and Spanish programming; multilingual support available.",
+  "transportation": "",
+  "website": "https://www.uniteoregon.org/washington-county-chapter"
+},
+{
+  "category": ["Mental Health and Recovery Services", "Family and Parenting Support"],
+  "name": "LifeWorks NW - Hawthorn Walk-In Center",
+  "address": "5240 NE Elam Young Pkwy, Ste. 100 Hillsboro, OR 97124",
+  "phone": "503-291-9111 (Washington County Crisis Line, 24/7)",
+  "hours": "Weekdays 9 a.m.-7 p.m.; Weekends 10 a.m.-4 p.m.",
+  "services": "Walk-in urgent care for mental health and addiction concerns for adults, youth, and children. Includes safety planning, stabilization, assessment, peer support, counseling, and connection to ongoing treatment. Mental Health Response Team (MHRT) pairs clinicians with Sheriff deputies for 911 calls with a mental health component. Substance Use Disorder team helps connect people to treatment in the community.",
+  "notes": "Walk-ins welcome. Operated by LifeWorks NW under contract with Washington County Behavioral Health. Call the 24/7 crisis line first if unsure.",
+  "transportation": "MAX Blue",
+  "website": "https://www.lifeworksnw.org/location/hawthorn-walk-in-center/",
+  "lat": 45.52228867847481,
+  "lng": -122.96769093590522
+},
+{
+  "category": ["Housing and Rental Assistance", "Disability and Aging Support"],
+  "name": "Home Access and Repair for Disabled and Elderly (HARDE)",
+  "address": "328 W Main St. Hillsboro, OR 97123",
+  "phone": "503-693-4726",
+  "hours": "Mon.-Fri. 8 a.m.-5 p.m.",
+  "services": "Free minor home repairs and accessibility modifications for low-income seniors and people with disabilities who own their home in Washington County. Services include grab bars, ramps, and safety modifications to support aging in place.",
+  "notes": "Funded through Washington County Community Development. Must own and occupy the home. Income limits apply.",
+  "transportation": "",
+  "website": "https://www.washingtoncountyor.gov/commdev/home-access-repair-disabled-elderly"
+}
+  {
+  "category": ["Mental Health and Recovery Services"],
+  "name": "Sequoia Mental Health Services",
+  "address": "Aloha: 4585 SW 185th Ave, Aloha, OR 97078; Hillsboro: 395 W Main St, Hillsboro, OR 97123",
+  "phone": "503-591-9280 (main) | 503-619-1560 (intake)",
+  "hours": "Mon.-Fri. 8 a.m.-5 p.m. Same-day, walk-in, and telehealth options available.",
+  "services": "Outpatient and community-based behavioral health and addiction recovery services for adults, children (ages 6+), and families in Washington County. Services include individual and group therapy, case management, psychiatric evaluation, medication management, supported employment, intensive case management, substance use and co-occurring disorder treatment, adult rehabilitation, and five licensed 24-hour residential treatment homes. Low-barrier substance use treatment available through the Behavioral Health Resource Network (BHRN) at no cost regardless of insurance or immigration status.",
+  "notes": "OHP, Medicaid, Medicare, and commercial insurance accepted. Private pay considered. Assistance applying for OHP available. Primarily operates out of Aloha with satellite office in Hillsboro. Website: sequoiamhs.org",
+  "transportation": "",
+  "website": "https://www.sequoiamhs.org/",
+  "lat": 45.4882477860707,
+  "lng": -122.86729476202869
+},
+{
+  "category": ["Legal Services", "Specialized Services"],
+  "name": "CLEAR Clinic",
+  "address": "Mailing: P.O. Box 11288, Portland, OR 97211 (Office: 537 SE Ash St, Portland, OR 97214)",
+  "phone": "503-389-5919",
+  "hours": "Office: Mon.-Thurs. 9 a.m.-5 p.m., Fri. 9 a.m.-4 p.m. Washington County drop-in clinics: Willow Creek (Beaverton) 1st Monday of month 2-6 p.m.; The Peer Company (Hillsboro) last Wednesday of month noon-4 p.m.",
+  "services": "Free legal services from a nonprofit collective of legal workers. Services include criminal record expungement, eviction expungement, court fine and fee waivers, legal name and gender-marker changes, deportation defense, DACA renewals, immigrant worker justice, and tenant advocacy. Tenant advocacy hotline for renters statewide (Tues./Thurs. 9 a.m.-5 p.m.). No appointment needed at drop-in clinics.",
+  "notes": "Washington County drop-in locations: Willow Creek at 241 SW Edgeway Dr., Beaverton (WorkSource Oregon building); The Peer Company at 5193 NE Elam Young Pkwy, Hillsboro, Room 204. All services are free. Recently became an independent nonprofit (formerly a PCC program). Check calendar at clear-clinic.org/drop-in-clinics — schedule rotates.",
+  "transportation": "",
+  "website": "https://clear-clinic.org/"
+}
   {
     "category": [
       "Libraries"

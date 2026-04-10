@@ -1361,18 +1361,6 @@ const resources = [
   },
   {
     "category": [
-      "Mental Health and Recovery Services"
-    ],
-    "name": "Sequoia Mental Health Services",
-    "address": "Multiple locations",
-    "phone": "503-519-3591",
-    "hours": "Mon.-Fri. 8 a.m.-5 p.m.",
-    "services": "Intakes and referrals. Serves adults and children with mental illness and substance use disorder in Washington Co..",
-    "notes": "Website: www.sequoiantts.org.",
-    "transportation": ""
-  },
-  {
-    "category": [
       "Domestic Violence/Sexual Assault"
     ],
     "name": "Sexual Assault Resource Center",

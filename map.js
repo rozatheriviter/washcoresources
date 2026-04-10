@@ -10,6 +10,54 @@ document.addEventListener('DOMContentLoaded', () => {
         maxZoom: 20
     }).addTo(map);
 
+    // Add Transit Layers
+    if (typeof transitData !== 'undefined') {
+        const lineColors = {
+            'B': '#004c97',  // Blue Line
+            'R': '#d31245',  // Red Line
+            'G': '#008852',  // Green Line
+            'Y': '#ffc425',  // Yellow Line
+            'O': '#f47321',  // Orange Line
+            'WES': '#606263' // WES Commuter Rail
+        };
+
+        L.geoJSON(transitData, {
+            style: function(feature) {
+                const type = feature.properties.type;
+                const line = feature.properties.line;
+
+                if (type === 'MAX' || type === 'CR') {
+                    // Get primary color from line string (could be 'R/B' etc)
+                    let color = '#666';
+                    for (const key in lineColors) {
+                        if (line && line.includes(key)) {
+                            color = lineColors[key];
+                            break;
+                        }
+                    }
+                    return {
+                        color: color,
+                        weight: 3,
+                        opacity: 0.8
+                    };
+                } else {
+                    // Bus lines
+                    return {
+                        color: '#999',
+                        weight: 1.5,
+                        opacity: 0.5,
+                        dashArray: '5, 5'
+                    };
+                }
+            },
+            onEachFeature: function(feature, layer) {
+                if (feature.properties.name) {
+                    layer.bindPopup('<strong>Transit Route:</strong> ' + feature.properties.name);
+                }
+            }
+        }).addTo(map);
+    }
+
     // Define custom marker icon (Deep Forest Green)
     const customIcon = L.divIcon({
         className: 'custom-marker',

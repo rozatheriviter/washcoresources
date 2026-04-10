@@ -31,6 +31,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         console.log('ServiceWorker registration failed: ', err);
                     });
             });
+
+            // Reload the page when a new service worker takes control
+            let refreshing = false;
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+                if (!refreshing) {
+                    refreshing = true;
+                    window.location.reload();
+                }
+            });
         }
     }
 

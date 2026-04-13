@@ -37,6 +37,8 @@
             </div>
         </section>
 
+        <!-- RESOURCE FORM: A standard HTML form.
+             Note: This does not submit to a database. It generates a mailto: link for manual review. -->
         <section class="form-section">
             <div class="container" style="max-width: 800px;">
                 <form id="resourceForm" class="resource-form">
@@ -120,6 +122,9 @@
         </div>
     </footer>
 
+    <!-- FORM LOGIC:
+         This script intercepts the form submission, gathers the input values,
+         and opens the user's default email client with a pre-filled message body. -->
     <script>
         document.getElementById('resourceForm').addEventListener('submit', function(e) {
             e.preventDefault();

@@ -1,3 +1,13 @@
+/**
+ * SERVICE WORKER - Rooted: WashCo
+ *
+ * Handles offline capabilities and caching.
+ *
+ * IMPORTANT: When you update any file (HTML, CSS, JS, or images),
+ * you MUST increment the 'vX' number in CACHE_NAME below.
+ * This tells the browser to clear the old cache and download the new files.
+ */
+
 const CACHE_NAME = 'rooted-washco-v8';
 const ASSETS_TO_CACHE = [
   './',
@@ -37,6 +47,13 @@ self.addEventListener('activate', event => {
   self.clients.claim();
 });
 
+/**
+ * FETCH STRATEGY: Stale-While-Revalidate
+ * 1. Checks cache for a match.
+ * 2. Returns the cached version immediately (if found) for speed.
+ * 3. Simultaneously fetches the latest version from the network
+ *    and updates the cache for the next visit.
+ */
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
 

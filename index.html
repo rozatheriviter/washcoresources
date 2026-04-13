@@ -17,6 +17,8 @@
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- SITE HEADER: Contains logo and primary navigation.
+         Active page is marked with class="active" -->
     <header>
         <div class="container header-container">
             <h1 class="logo">Rooted: WashCo</h1>
@@ -31,6 +33,8 @@
     </header>
 
     <main id="main-content">
+        <!-- HERO SECTION: Primary search and category filtering.
+             Search input and category chips are linked to app.js -->
         <section class="hero">
             <div class="container">
                 <h2>Essential Resource Guide for Washington County.</h2>
@@ -51,6 +55,7 @@
             </div>
         </section>
 
+        <!-- QUICK START: High-visibility card for immediate crisis needs (e.g. 211 info) -->
         <section class="quick-start">
             <div class="container">
                 <div class="info-card highlight-card">
@@ -67,6 +72,7 @@
             </div>
         </section>
 
+        <!-- RESULTS GRID: Resource cards are dynamically injected into #resourceGrid by app.js -->
         <section class="results">
             <div class="container">
                 <div id="resourceGrid" class="resource-grid">

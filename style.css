@@ -1,3 +1,18 @@
+/**
+ * DESIGN SYSTEM GUIDE - Rooted: WashCo
+ *
+ * This CSS file defines the visual identity of the project.
+ * It uses a "Earthy & Grounded" palette to create a calming, non-clinical feel.
+ *
+ * KEY SECTIONS:
+ * 1. :root Variables - Global colors, fonts, and spacing.
+ * 2. Layout & Header - Sticky navigation and logo.
+ * 3. Hero Sections - The prominent top banners.
+ * 4. Cards & Grid - The resource display components.
+ * 5. Forms - Styles for the resource submission page.
+ * 6. Map - Leaflet custom overrides.
+ */
+
 :root {
     /* Palette - Earthy & Grounded */
     --bg-color: #FDFCF8; /* Warm Off-White/Cream */
@@ -25,6 +40,10 @@
     --font-header: 'Merriweather', serif;
     --font-body: 'Inter', sans-serif;
 }
+
+/* ---------------------------------------------------------
+   GLOBAL RESET & BASE STYLES
+   --------------------------------------------------------- */
 
 * {
     box-sizing: border-box;
@@ -85,7 +104,11 @@ nav a.active, nav a:hover {
     color: var(--accent-color);
 }
 
-/* Hero Section */
+/* ---------------------------------------------------------
+   HERO SECTIONS
+   The .hero class is used for the main landing page.
+   .hero-about is a modifier for text-heavy pages.
+   --------------------------------------------------------- */
 .hero {
     background-color: var(--text-primary);
     color: var(--text-on-dark);
@@ -242,7 +265,10 @@ nav a.active, nav a:hover {
     box-shadow: var(--shadow-md);
 }
 
-/* Results Grid */
+/* ---------------------------------------------------------
+   RESOURCE CARDS & GRID
+   Cards use a CSS Grid layout that is responsive.
+   --------------------------------------------------------- */
 .results {
     padding-bottom: 100px;
 }
@@ -368,6 +394,10 @@ nav a.active, nav a:hover {
     gap: 16px;
 }
 
+/* ---------------------------------------------------------
+   BUTTONS
+   Pill-shaped buttons with distinct primary/secondary states.
+   --------------------------------------------------------- */
 .btn {
     flex: 1;
     display: inline-flex;

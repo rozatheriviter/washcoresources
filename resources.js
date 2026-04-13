@@ -1,3 +1,28 @@
+/**
+ * DATA MANAGEMENT GUIDE - Rooted: WashCo
+ *
+ * This file contains the primary dataset for the application. It is exported as 'resources'
+ * for use in app.js and attached to 'window.siteResources' for access in map.js.
+ *
+ * HOW TO ADD A NEW RESOURCE:
+ * 1. Create a new object {} within the 'resources' array below.
+ * 2. Fill in the following properties:
+ *    - name: (String) Official name of the organization.
+ *    - category: (Array of Strings) Use existing categories like "Food and Grocery Assistance",
+ *      "Mental Health and Recovery Services", etc., to ensure they appear in filters.
+ *    - address: (String) Physical address. Use "Confidential" for sensitive locations.
+ *    - phone: (String) Primary contact number.
+ *    - hours: (String) Operating hours (e.g., "Mon-Fri 9am-5pm").
+ *    - services: (String) Description of services offered.
+ *    - notes: (String) Extra info like eligibility, email, or walk-in policies.
+ *    - transportation: (String) Specific bus or MAX lines (e.g., "Bus: 57, MAX Blue").
+ *    - website: (String) Full URL including https://.
+ *    - lat & lng: (Numbers) Decimal coordinates. Required for the resource to appear on the Map.
+ *
+ * NOTE: After making changes to this file, you MUST increment the version number in 'sw.js'
+ * (e.g., change 'v8' to 'v9') to force the Progressive Web App to update for all users.
+ */
+
 const resources = [
   {
     "category": [

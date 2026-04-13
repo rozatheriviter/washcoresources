@@ -1,3 +1,13 @@
+/**
+ * APPLICATION LOGIC - Rooted: WashCo
+ *
+ * This file handles the main functionality of the resource directory:
+ * 1. Initializing the list from resources.js.
+ * 2. Handling search and category filtering.
+ * 3. Dynamically generating HTML for resource cards.
+ * 4. Registering the Service Worker for PWA functionality.
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     // DOM Elements
     const searchInput = document.getElementById('searchInput');
@@ -53,6 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * Extracts all unique categories from the resource list.
+     * Handles both single string categories and arrays.
+     */
     function getUniqueCategories() {
         const categories = new Set();
         resources.forEach(r => {
@@ -103,6 +117,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * Filters the 'resources' array based on:
+     * - currentCategory (selected via chips)
+     * - searchTerm (entered in search input)
+     * Matches against name, services, notes, address, and category.
+     */
     function filterResources() {
         return resources.filter(resource => {
             // Category Match
@@ -146,6 +166,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    /**
+     * Generates the HTML structure for a single resource card.
+     * Includes logic for conditional links (Website, Map, Call).
+     */
     function createResourceCard(resource) {
         const div = document.createElement('div');
         div.className = 'resource-card';

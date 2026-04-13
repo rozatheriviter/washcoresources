@@ -1,3 +1,12 @@
+/**
+ * MAPPING LOGIC - Rooted: WashCo
+ *
+ * This file uses the Leaflet library to:
+ * 1. Initialize the map centered on Washington County.
+ * 2. Load and style transit lines (MAX, CR, Bus) from transit_data.js.
+ * 3. Plot resource markers from resources.js if they have lat/lng data.
+ */
+
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize the map centered on Washington County, OR
     // Hillsboro/Beaverton area is roughly 45.5, -122.9
@@ -10,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         maxZoom: 20
     }).addTo(map);
 
-    // Add Transit Layers
+    // Add Transit Layers (TriMet MAX lines, WES, and frequent buses)
     if (typeof transitData !== 'undefined') {
         const lineColors = {
             'B': '#004c97',  // Blue Line
@@ -67,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         popupAnchor: [0, -7]
     });
 
-    // Add markers for resources with geodata
+    // Add markers for resources with geodata (lat/lng)
     if (typeof resources !== 'undefined') {
         resources.forEach(resource => {
             if (resource.lat && resource.lng) {

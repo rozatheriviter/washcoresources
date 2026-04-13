@@ -37,6 +37,7 @@
                     <h2>Interactive Resource Map</h2>
                     <p>Visually explore community resources across Washington County. Click on a marker to see more details.</p>
                 </div>
+                <!-- MAP CONTAINER: Initialized and populated by map.js using the Leaflet library -->
                 <div id="map"></div>
             </div>
         </section>
@@ -49,7 +50,11 @@
         </div>
     </footer>
 
-    <!-- Leaflet JS -->
+    <!-- EXTERNAL LIBRARIES & DATA:
+         - Leaflet: Mapping engine
+         - transit_data.js: GeoJSON for TriMet lines
+         - resources.js: Main resource dataset
+         - map.js: Mapping logic -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="transit_data.js"></script>
     <script src="resources.js"></script>
